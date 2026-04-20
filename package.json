@@ -1,0 +1,27 @@
+{
+  "name": "mcp-brainstorming",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local MCP server for structured brainstorming and design-closure workflows.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "lint": "node --check src/index.js && node --check src/brainstorming-engine.js",
+    "test": "node --test",
+    "validate": "npm run lint && npm test"
+  },
+  "keywords": [
+    "mcp",
+    "brainstorming",
+    "design",
+    "planning"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^4.3.6"
+  }
+}
